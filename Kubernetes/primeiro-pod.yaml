@@ -1,0 +1,17 @@
+apiVersion: v1 #versão
+kind: Pod #especificação
+metadata:
+  name: primeiro-pod-declarativo
+spec: #especificações
+  containers: #Dados do conteiner
+    - name: nginx-container
+      image: nginx:latest 
+    #Aqui eu posso ter mais de uma declaração de container, basta seguit o padrão -name image 
+
+#kubectl
+#get nodes
+#get pods | get pods --watch
+# apply -f file.yaml
+#decrible pod nome-do-pod
+#delete pod nome-do-pode ( só serve para pods criados de maneira imperativa )
+#delete -f file.yaml

@@ -1,0 +1,6 @@
+O objetivo desse laboratório é estudar as estruturas iniciais de kubernetes - Pods, Services e Config Maps. 
+
+Documentar instalação do kubernates no linux, windows e Google Cloud Plataform
+
+Para criar pods, podemos fazer isso de maneira interativa e declarativa 
+kubectl run nome_do pod --image=nome_da_imagem
