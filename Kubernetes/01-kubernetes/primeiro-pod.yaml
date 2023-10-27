@@ -10,8 +10,8 @@ spec: #especificações
 
 #kubectl
 #get nodes
-#get pods | get pods --watch
+#get pods | get pods --watch | get pods -o wide
 # apply -f file.yaml
 #decrible pod nome-do-pod
-#delete pod nome-do-pode ( só serve para pods criados de maneira imperativa )
+#delete pod nome-do-pode 
 #delete -f file.yaml
