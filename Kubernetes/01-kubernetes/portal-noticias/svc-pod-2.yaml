@@ -14,3 +14,4 @@ spec:
 #kubectl get svc
 
 #rever moduilo 4 aula 4 
+# Tiop de comunicação robusta que permite a comunicação entre os elementos existentes dentro do Cluster
