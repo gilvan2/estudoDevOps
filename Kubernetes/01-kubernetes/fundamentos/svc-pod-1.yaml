@@ -13,5 +13,8 @@ spec:
 
 #kubectl svc mostrais serviços -> CLUSTERIP -> IP Dentro do Cluster EXTERNAL-IP -> IP visto fora do cluster PORTS -> Portas atibuídas ao NodePort
 # Para acessar pelo navegador, o windows implicitamente converte para localhost + porta presente em ExternalIP | Ports 
-# No linux o processo é diferente:
 # O numero presente no PORTS é arbitrário, a não ser que o mesmo seja definido no arquivo de configuração
+
+# No linux o processo é diferente:
+# kubectl get nodes -o wide 
+# usar o valor da campo INTERNAL-IP no navegador + a porta de acesso 
