@@ -10,7 +10,23 @@ spec:
       image: aluracursos/mysql-db:1
       ports:
         - containerPort: 3306
+      envFrom: #Nesse modelo, estamos importando todos os valores presentes no configMap db-configmap
+        - configMapRef:
+            name: db-configmap
+        
+
+      #------------------------------------------------------------------------------------------------------------------------------------------------  
+      #Nesse modelo, usamos o valor presente no config map e salvamos no nosso - name, mas precisamos buscar cada um dos elementos de configuração
       #env:
+      #  - name: MYSQL_ROOT_PASSWORD
+      #  valueFrom:
+      #    configMapKeyRef:
+      #      name: db-configmap
+      #      key: MYQL_ROOT_PASSWORD
+
+      #------------------------------------------------------------------------------------------------------------------------------------------------        
+      # Nesse modelo, indicamos explicitamente quais os valores para o nosso env
+      #env: 
       #  - name: "MYSQL_ROOT_PASSWORD"
       #    value: "q1w2e3r4"
       #  - name: "MYSQL_DATABASE"
