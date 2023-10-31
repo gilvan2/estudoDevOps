@@ -10,5 +10,12 @@ spec:
       image: aluracursos/mysql-db:1
       ports:
         - containerPort: 3306
+      env:
+        - name: "MYSQL_ROOT_PASSWORD"
+          value: "q1w2e3r4"
+        - name: "MYSQL_DATABASE"
+          value: "empresa"
+        - name: "MYSQL_PASSWORD"
+          value: "q1w2e3r4"
 
 #kubectl describe pods db-noticias ( consegue verificar tudo o que aconteceu no ciclo de vida do pod)
