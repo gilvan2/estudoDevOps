@@ -10,6 +10,9 @@ spec:
       image: aluracursos/portal-noticias:1
       ports:
         - containerPort: 80
+      envFrom:
+        - configMapRef:
+            name: portal-configman
       #targetPort:80  
 # kubectl exec -it nome-do-pode -- bash
 #kubectl delete pods --all

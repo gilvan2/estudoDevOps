@@ -3,4 +3,10 @@ O objetivo desse laboratório é estudar as estruturas iniciais de kubernetes - 
 Documentar instalação do kubernates no linux, windows e Google Cloud Plataform
 
 Para criar pods, podemos fazer isso de maneira interativa e declarativa 
-kubectl run nome_do pod --image=nome_da_imagem
+kubectl run nome_do pod --image=nome_da_imagem <forma imperativa>
+
+
+BASIS OS 028
+
+
+RISCO DE CRÈDITO 
