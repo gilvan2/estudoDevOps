@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: portal-noticias-replicaset
+spec:
+  template: #Aqui são definidas todas as informações dos PODs que serão gerenciados
+    metadata:
+      name: portal-noticias
+      labels:
+        app: portal-noticias 
+    spec:
+      containers:
+        - name: portal-noticias-container
+          image: aluracursos/portal-noticias:1
+          ports:
+            - containerPort: 80
+          envFrom:
+            - configMapRef:
+                name: portal-configmap 
+  replicas: 3            
+  selector:
+    matchLabels:
+      app: portal-noticias #Os caras da linha 10 e da linha 23 são iguais 
+
+#ReplicaSet serve para gerenciar vários pods, cuidando do ciclo de vida deles e evitando que eles fiquem desamparados para eventuais situações de parada ou ciclo de vida inacabado
+#kubectl get replicasets
