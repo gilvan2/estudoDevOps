@@ -24,3 +24,4 @@ spec:
 
 #ReplicaSet serve para gerenciar vários pods, cuidando do ciclo de vida deles e evitando que eles fiquem desamparados para eventuais situações de parada ou ciclo de vida inacabado
 #kubectl get replicasets
+#kubectl get rs --watch
